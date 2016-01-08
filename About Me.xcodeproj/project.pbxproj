@@ -14,6 +14,11 @@
 		797CD5BF1C3D5F1300A05101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797CD5BD1C3D5F1300A05101 /* LaunchScreen.storyboard */; };
 		797CD5CA1C3D5F1300A05101 /* About_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5C91C3D5F1300A05101 /* About_MeTests.swift */; };
 		797CD5D51C3D5F1300A05101 /* About_MeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5D41C3D5F1300A05101 /* About_MeUITests.swift */; };
+		797CD5E41C3D610D00A05101 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5E31C3D610D00A05101 /* PageViewController.m */; };
+		797CD5E91C3D667600A05101 /* LegendOfZeldaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5E81C3D667600A05101 /* LegendOfZeldaController.swift */; };
+		797CD5ED1C3D688400A05101 /* FamilyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5EC1C3D688300A05101 /* FamilyController.swift */; };
+		797CD5EF1C3D689C00A05101 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5EE1C3D689C00A05101 /* MeController.swift */; };
+		797CD5F11C3D69A000A05101 /* FutureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CD5F01C3D69A000A05101 /* FutureController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,12 @@
 		797CD5D01C3D5F1300A05101 /* About MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "About MeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		797CD5D41C3D5F1300A05101 /* About_MeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_MeUITests.swift; sourceTree = "<group>"; };
 		797CD5D61C3D5F1300A05101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797CD5E21C3D610C00A05101 /* About Me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "About Me-Bridging-Header.h"; sourceTree = "<group>"; };
+		797CD5E31C3D610D00A05101 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		797CD5E81C3D667600A05101 /* LegendOfZeldaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegendOfZeldaController.swift; sourceTree = "<group>"; };
+		797CD5EC1C3D688300A05101 /* FamilyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyController.swift; sourceTree = "<group>"; };
+		797CD5EE1C3D689C00A05101 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		797CD5F01C3D69A000A05101 /* FutureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +108,13 @@
 		797CD5B31C3D5F1300A05101 /* About Me */ = {
 			isa = PBXGroup;
 			children = (
-				797CD5B41C3D5F1300A05101 /* AppDelegate.swift */,
-				797CD5B61C3D5F1300A05101 /* ViewController.swift */,
+				797CD5E51C3D659400A05101 /* Controller */,
 				797CD5B81C3D5F1300A05101 /* Main.storyboard */,
+				797CD5E31C3D610D00A05101 /* PageViewController.m */,
 				797CD5BB1C3D5F1300A05101 /* Assets.xcassets */,
 				797CD5BD1C3D5F1300A05101 /* LaunchScreen.storyboard */,
 				797CD5C01C3D5F1300A05101 /* Info.plist */,
+				797CD5E21C3D610C00A05101 /* About Me-Bridging-Header.h */,
 			);
 			path = "About Me";
 			sourceTree = "<group>";
@@ -123,6 +135,19 @@
 				797CD5D61C3D5F1300A05101 /* Info.plist */,
 			);
 			path = "About MeUITests";
+			sourceTree = "<group>";
+		};
+		797CD5E51C3D659400A05101 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				797CD5B61C3D5F1300A05101 /* ViewController.swift */,
+				797CD5B41C3D5F1300A05101 /* AppDelegate.swift */,
+				797CD5EE1C3D689C00A05101 /* MeController.swift */,
+				797CD5E81C3D667600A05101 /* LegendOfZeldaController.swift */,
+				797CD5EC1C3D688300A05101 /* FamilyController.swift */,
+				797CD5F01C3D69A000A05101 /* FutureController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				797CD5B71C3D5F1300A05101 /* ViewController.swift in Sources */,
+				797CD5ED1C3D688400A05101 /* FamilyController.swift in Sources */,
 				797CD5B51C3D5F1300A05101 /* AppDelegate.swift in Sources */,
+				797CD5F11C3D69A000A05101 /* FutureController.swift in Sources */,
+				797CD5EF1C3D689C00A05101 /* MeController.swift in Sources */,
+				797CD5E91C3D667600A05101 /* LegendOfZeldaController.swift in Sources */,
+				797CD5E41C3D610D00A05101 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "About Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.About-Me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "About Me/About Me-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +443,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "About Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.About-Me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "About Me/About Me-Bridging-Header.h";
 			};
 			name = Release;
 		};
